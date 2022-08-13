@@ -1,3 +1,4 @@
+import { Satellite } from './satellite';
 export class Satellite {
 
 	name: string;
@@ -15,9 +16,11 @@ export class Satellite {
    }
 	
 	isSpaceDebris(): boolean {
+		if(this.type === 'Space Debris') {
 		return true;
    }
 
+}
 }
 
 // TODO 3a: fix isSpaceDebris check
